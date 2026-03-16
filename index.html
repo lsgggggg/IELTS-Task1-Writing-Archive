@@ -52,29 +52,29 @@
     <!-- 作文列表 -->
     <h2 style="font-size:1.2rem; color:#1a365d; margin:32px 0 16px;">作文列表</h2>
     <div class="card-grid">
-      <a href="essays/2026-03-16_CO2.html" class="card card-link" data-essay="2026-03-16_CO2" data-score-before="7.0" data-score-after="7.0">
+      <div class="card" data-essay="2026-03-16_CO2" data-score-before="7.0" data-score-after="7.0">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-          <div>
-            <div style="font-size:.82rem; color:#a0aec0;">2026-03-16</div>
-            <div style="font-weight:700; color:#2d3748; margin:4px 0;">CO2 Emissions per Person (1967–2007)</div>
+          <a href="essays/2026-03-16_CO2.html" style="flex:1; color:inherit;">
+            <div style="font-size:.85rem; color:#718096; margin-bottom:6px;">2026-03-16</div>
+            <div style="font-weight:600; color:#2d3748; margin-bottom:8px;">CO2 Emissions per Person (1967–2007)</div>
             <div style="display:flex; gap:6px; flex-wrap:wrap;">
               <span class="tag tag-blue">动态类</span>
               <span class="tag tag-purple">折线图</span>
             </div>
-          </div>
-          <div style="text-align:right;">
-            <div style="font-size:.8rem; color:#718096;">Overall</div>
-            <div style="font-size:1.1rem; font-weight:700;">
-              <span style="color:#e53e3e;">7.0</span>
-              <span style="color:#a0aec0; margin:0 4px;">→</span>
-              <span style="color:#38a169;">7.0</span>
+          </a>
+          <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+            <div>
+              <div style="font-size:.8rem; color:#718096;">Overall</div>
+              <div style="font-size:1.1rem;">
+                <span style="color:#e53e3e; font-weight:700;">7.0</span>
+                <span style="color:#a0aec0; margin:0 4px;">→</span>
+                <span style="color:#38a169; font-weight:700;">7.0</span>
+              </div>
             </div>
+            <button class="delete-btn" onclick="event.stopPropagation(); deleteEssay('2026-03-16_CO2')">移入回收站</button>
           </div>
         </div>
-        <div style="display:flex; justify-content:flex-end; margin-top:8px;">
-          <button class="delete-btn" onclick="event.preventDefault(); event.stopPropagation(); deleteEssay('2026-03-16_CO2')">移入回收站</button>
-        </div>
-      </a>
+      </div>
     </div>
 
     <!-- 功能模块 -->
