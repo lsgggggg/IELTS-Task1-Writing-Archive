@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雅思小作文学习档案</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">雅思小作文学习档案</a>
+    <div class="navbar-links">
+      <a href="index.html" class="active">主页</a>
+      <a href="templates.html">写作模板</a>
+      <a href="vocabulary.html">好词好句</a>
+      <a href="errors.html">常见错误</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page-content">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>雅思小作文学习档案</h1>
+      <p>记录每一次 Task 1 写作练习的成长轨迹，积累属于你的个人数据描述素材库</p>
+    </div>
+
+    <!-- 统计概览 -->
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-stat="essay-count">1</div>
+        <div class="stat-label">已修改作文</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-before">7.0</div>
+        <div class="stat-label">平均原文分</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-after">7.0</div>
+        <div class="stat-label">平均修改后分</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-diff">+0.0</div>
+        <div class="stat-label">平均提升</div>
+      </div>
+    </div>
+
+    <!-- 作文列表 -->
+    <h2 style="font-size:1.2rem; color:#1a365d; margin:32px 0 16px;">作文列表</h2>
+    <div class="card-grid">
+      <a href="essays/2026-03-16_CO2.html" class="card card-link" data-essay="2026-03-16_CO2" data-score-before="7.0" data-score-after="7.0">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+          <div>
+            <div style="font-size:.82rem; color:#a0aec0;">2026-03-16</div>
+            <div style="font-weight:700; color:#2d3748; margin:4px 0;">CO2 Emissions per Person (1967–2007)</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <span class="tag tag-blue">动态类</span>
+              <span class="tag tag-purple">折线图</span>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:.8rem; color:#718096;">Overall</div>
+            <div style="font-size:1.1rem; font-weight:700;">
+              <span style="color:#e53e3e;">7.0</span>
+              <span style="color:#a0aec0; margin:0 4px;">→</span>
+              <span style="color:#38a169;">7.0</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; justify-content:flex-end; margin-top:8px;">
+          <button class="delete-btn" onclick="event.preventDefault(); event.stopPropagation(); deleteEssay('2026-03-16_CO2')">移入回收站</button>
+        </div>
+      </a>
+    </div>
+
+    <!-- 功能模块 -->
+    <h2 style="font-size:1.2rem; color:#1a365d; margin:40px 0 16px;">学习工具</h2>
+    <div class="card-grid card-grid-3">
+      <a href="templates.html" class="card card-link" style="border-top:3px solid #3182ce;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">📋</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">写作模板</div>
+        <div style="font-size:.85rem; color:#718096;">按图表类型分类的通用写作框架，考前可快速复习</div>
+      </a>
+      <a href="vocabulary.html" class="card card-link" style="border-top:3px solid #38a169;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">📝</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">好词好句</div>
+        <div style="font-size:.85rem; color:#718096;">数据描述高级词汇和优秀表达，趋势词、对比词、比例词等</div>
+      </a>
+      <a href="errors.html" class="card card-link" style="border-top:3px solid #e53e3e;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">⚠️</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">常见错误</div>
+        <div style="font-size:.85rem; color:#718096;">Task 1 特有错误汇总：缺少 Overview、机械罗列、个人观点等</div>
+      </a>
+    </div>
+
+    <!-- 回收站 -->
+    <div id="recycle-bin-section" style="display:none;">
+      <div class="recycle-bin-header">回收站</div>
+      <p style="font-size:.85rem; color:#a0aec0; margin-bottom:12px;">以下作文已被移入回收站，可随时恢复或彻底删除</p>
+      <div id="recycle-bin-list"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container">IELTS Task 1 Writing Study Archive · Powered by AI Review</div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

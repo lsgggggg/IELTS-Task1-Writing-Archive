@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写作模板 — 雅思小作文学习档案</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">雅思小作文学习档案</a>
+    <div class="navbar-links">
+      <a href="index.html">主页</a>
+      <a href="templates.html" class="active">写作模板</a>
+      <a href="vocabulary.html">好词好句</a>
+      <a href="errors.html">常见错误</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page-content">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>写作模板</h1>
+      <p>按 [静态/动态] × [图表类型] 分类的通用写作框架，包含开头改述、Overview 和数据描述模板</p>
+    </div>
+
+    <!-- 第一级筛选：静态/动态 -->
+    <div class="filter-group" data-group="chartclass">
+      <button class="filter-btn active" onclick="filterItems('chartclass','all')">全部</button>
+      <button class="filter-btn" onclick="filterItems('chartclass','static')">静态类</button>
+      <button class="filter-btn" onclick="filterItems('chartclass','dynamic')">动态类</button>
+    </div>
+
+    <!-- 第二级筛选：图表类型 -->
+    <div class="filter-group" data-group="charttype" style="margin-top:4px;">
+      <button class="filter-btn active" onclick="filterItems('charttype','all')">全部类型</button>
+      <button class="filter-btn" onclick="filterItems('charttype','line')">线形图</button>
+      <button class="filter-btn" onclick="filterItems('charttype','bar')">柱状图</button>
+      <button class="filter-btn" onclick="filterItems('charttype','pie')">饼图</button>
+      <button class="filter-btn" onclick="filterItems('charttype','table')">表格</button>
+      <button class="filter-btn" onclick="filterItems('charttype','map')">地图</button>
+      <button class="filter-btn" onclick="filterItems('charttype','process')">流程图</button>
+    </div>
+
+    <!-- 模板内容区域 -->
+    <div id="dynamic-line" class="template-block" data-chartclass="dynamic" data-charttype="line" style="margin-top:24px;">
+      <div class="card">
+        <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">动态类 × 折线图 写作模板</h3>
+        <p class="template-note">基于 1 篇文章总结，随着更多同类文章的积累将进一步完善</p>
+
+        <div class="accordion-item open" style="margin-top:16px;">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            开头段模板（题目改述）
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              The line graph <span class="template-placeholder">illustrates</span> the <span class="template-placeholder">[数据描述，如 average CO2 emitted per person]</span> in <span class="template-placeholder">[概括性描述 + 国家/地区列举]</span> <span class="template-placeholder">between [起始年] and [结束年]</span>.
+            </div>
+            <p class="template-note">要点：① 用 illustrates/presents/compares 替换题目中的 shows；② 先概括再列举（如 "four European countries — A, B, C, and D"）；③ 用 between...and 替换 from...to</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            概述段模板（Overview）⚠️ 最重要
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              Overall, <span class="template-placeholder">[最高/最显著的类别]</span> <span class="template-placeholder">[主要趋势，如 had the highest figure throughout the entire period, although it declined gradually]</span>. <span class="template-placeholder">[第二显著类别 + 趋势]</span>. By contrast, <span class="template-placeholder">[相反趋势的类别]</span> experienced <span class="template-placeholder">[相反趋势描述]</span>, with <span class="template-placeholder">[补充细节，用 "with + 名词 + 分词" 结构]</span>.
+            </div>
+            <p class="template-note">要点：① 概述段不包含具体数字；② 概括 2-3 个最显著的趋势/特征；③ 用 throughout the entire period, exhibited, declined gradually 等高级表达；④ 用 By contrast 引出相反趋势</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            主体段数据描述模板
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              <p style="margin-bottom:12px;"><strong>主体段一（起始数据 + 前半段变化）：</strong></p>
+              In <span class="template-placeholder">[起始年]</span>, <span class="template-placeholder">[最高类别]</span> had the highest <span class="template-placeholder">[数据类型]</span>, at approximately <span class="template-placeholder">[数据 + 单位]</span>. <span class="template-placeholder">[第二类别]</span> was lower, at around <span class="template-placeholder">[数据]</span>, while <span class="template-placeholder">[其他类别]</span> recorded significantly lower figures, at about <span class="template-placeholder">[数据]</span> respectively. A decade later, <span class="template-placeholder">[变化描述]</span>, reaching its peak, while <span class="template-placeholder">[另一类别变化]</span>.
+
+              <p style="margin-bottom:12px; margin-top:16px;"><strong>主体段二（后半段趋势至结束）：</strong></p>
+              After <span class="template-placeholder">[转折年]</span>, <span class="template-placeholder">[类别]</span>'s <span class="template-placeholder">[数据类型]</span> fell sharply to around <span class="template-placeholder">[数据]</span> by <span class="template-placeholder">[年份]</span> and continued to decline to about <span class="template-placeholder">[数据]</span> by <span class="template-placeholder">[结束年]</span>. <span class="template-placeholder">[另一类别]</span> also dropped, but more gradually, finishing at about <span class="template-placeholder">[数据]</span>. On the other hand, <span class="template-placeholder">[上升类别]</span> increased steadily from <span class="template-placeholder">[数据]</span> to nearly <span class="template-placeholder">[数据]</span> over the <span class="template-placeholder">[X]</span>-year period. <span class="template-placeholder">[另一上升类别]</span> also rose considerably, from about <span class="template-placeholder">[数据]</span> to <span class="template-placeholder">[数据]</span>.
+            </div>
+            <p class="template-note">要点：① 用 approximately / around / about 交替使用引用数据；② 用 recorded, reaching its peak, rose considerably 等高级表达；③ 用 A decade later, On the other hand 等衔接词；④ 明确写出时间跨度（如 over the 40-year period）</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e2e8f0;">
+          <div style="font-size:.85rem; color:#718096; font-weight:600; margin-bottom:6px;">来源文章</div>
+          <a href="essays/2026-03-16_CO2.html#revised" style="font-size:.85rem;" data-essay="2026-03-16_CO2">2026-03-16 CO2 Emissions per Person</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container">IELTS Task 1 Writing Study Archive · Powered by AI Review</div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
