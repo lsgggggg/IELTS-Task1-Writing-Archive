@@ -47,7 +47,63 @@
       <button class="filter-btn" onclick="filterItems('charttype','process')">流程图</button>
     </div>
 
+
     <!-- 模板内容区域 -->
+    <div id="dynamic-process" class="template-block" data-chartclass="dynamic" data-charttype="process" style="margin-top:24px;">
+      <div class="card">
+        <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">动态类 × 流程图（生命周期/循环流程）写作模板</h3>
+        <p class="template-note">基于 1 篇文章总结，随着更多同类文章的积累将进一步完善</p>
+
+        <div class="accordion-item open" style="margin-top:16px;">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            开头段模板（题目改述）
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              The diagram illustrates the <span class="template-placeholder">various stages in the [流程名称，如 life cycle]</span> of <span class="template-placeholder">[主语，如 the salmon]</span>, <span class="template-placeholder">[同位语补充，如 a species of large fish]</span>.
+            </div>
+            <p class="template-note">要点：① 用 illustrates 替换 shows；② 加入 "the various stages in the..." 明确流程图本质；③ 用同位语对主语做同义补充，避免与题目雷同</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            概述段模板（Overview）⚠️ 最重要
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              Overall, it is clear that <span class="template-placeholder">[主语]</span> pass through <span class="template-placeholder">[数量] main [developmental/process] stages — [阶段1], [阶段2] and [阶段3] — and</span> <span class="template-placeholder">[额外维度，如 inhabit three distinct environments]</span> before <span class="template-placeholder">[循环触发事件，如 returning to their birthplace to spawn]</span>, thus completing a full cycle.
+            </div>
+            <p class="template-note">要点：① 覆盖三大维度——阶段 + 额外特征 + 循环性；② 用破折号嵌入阶段术语；③ 用 "thus completing a full cycle" 点明循环，直接触发 TA 高分；④ 如为非循环流程，将结尾改为 "before reaching the final [output]"</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            主体段数据描述模板
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              <p style="margin-bottom:12px;"><strong>主体段一（前半流程）：</strong></p>
+              The process begins in <span class="template-placeholder">[起始环境]</span>, where <span class="template-placeholder">[对象]</span> <span class="template-placeholder">[被动动作，如 are laid / are produced]</span> <span class="template-placeholder">[方位介词短语]</span> for <span class="template-placeholder">[时间范围]</span>. Once <span class="template-placeholder">[状态变化过去分词，如 hatched / formed]</span>, <span class="template-placeholder">[新阶段对象]</span>, now known as <span class="template-placeholder">'[术语]'</span> and measuring <span class="template-placeholder">[尺寸]</span>, <span class="template-placeholder">[动作，如 migrate downstream to]</span> <span class="template-placeholder">[下一环境]</span>. In this <span class="template-placeholder">[环境特征]</span> environment, they remain for <span class="template-placeholder">[时长]</span>.
+
+              <p style="margin-bottom:12px; margin-top:16px;"><strong>主体段二（后半流程 + 循环）：</strong></p>
+              Upon reaching <span class="template-placeholder">[条件，如 a length of ...]</span>, <span class="template-placeholder">[对象]</span>, at this point referred to as <span class="template-placeholder">'[术语]'</span>, <span class="template-placeholder">[动作]</span> to <span class="template-placeholder">[下一环境]</span>, where they spend <span class="template-placeholder">[时长]</span> <span class="template-placeholder">[发育状态，如 maturing]</span>. By the end of this period, they have grown into <span class="template-placeholder">[最终阶段]</span>, with <span class="template-placeholder">[尺寸数据]</span>. These <span class="template-placeholder">[最终阶段对象]</span> then return to <span class="template-placeholder">[起始环境]</span> to <span class="template-placeholder">[循环触发动作]</span>, and the <span class="template-placeholder">[流程名]</span> begins anew.
+            </div>
+            <p class="template-note">要点：① 使用固定衔接序列 The process begins → Once [过去分词] → migrate/move → Upon reaching → By the end of this period → These...then；② 环境动作必须用被动语态（are laid, are hidden）；③ 使用分词结构（measuring, hatched, referred to as）压缩句子；④ 结尾的 "begins anew" 呼应 Overview 的 "full cycle" 形成首尾呼应</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e2e8f0;">
+          <div style="font-size:.85rem; color:#718096; font-weight:600; margin-bottom:6px;">来源文章</div>
+          <a href="essays/2026-4-13_life_of_salmon.html#revised" style="font-size:.85rem;" data-essay="2026-4-13_life_of_salmon">2026-04-13 Life Cycle of Salmon</a>
+        </div>
+      </div>
+    </div>
+
     <div id="dynamic-line" class="template-block" data-chartclass="dynamic" data-charttype="line" style="margin-top:24px;">
       <div class="card">
         <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">动态类 × 折线图 写作模板</h3>
