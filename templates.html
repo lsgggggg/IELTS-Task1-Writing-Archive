@@ -49,6 +49,62 @@
 
 
     <!-- 模板内容区域 -->
+
+    <div id="static-table" class="template-block" data-chartclass="static" data-charttype="table" style="margin-top:24px;">
+      <div class="card">
+        <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">静态类 × 表格（单个时间点）写作模板</h3>
+        <p class="template-note">基于 1 篇文章总结，随着更多同类文章的积累将进一步完善</p>
+
+        <div class="accordion-item open" style="margin-top:16px;">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            开头段模板（题目改述）
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              The table illustrates the <span class="template-placeholder">[数据单位，如 percentage / amount / number]</span> of <span class="template-placeholder">[主题，如 consumer spending / energy consumption]</span> on <span class="template-placeholder">[数量] categories</span> of <span class="template-placeholder">[对象，如 items / products]</span> across <span class="template-placeholder">[数量] countries</span> in <span class="template-placeholder">[时间点]</span>.
+            </div>
+            <p class="template-note">要点：① 用 illustrates 替换题目中的 shows / gives information on；② 用 percentage / amount / number 明确数据类型，避免题目原文的 "information on"；③ 用 across 而非 including 引导范围，更紧凑；④ 切勿盲目使用 "different" 等修饰词，除非图表有多个时间点或类型差异；⑤ 数清楚类别数量、对象数量，不可出现 "seven types" 这类事实错误</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            概述段模板（Overview）⚠️ 最重要
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              Overall, it is clear that <span class="template-placeholder">[最大类别]</span> accounted for the largest proportion of <span class="template-placeholder">[主题]</span> in every <span class="template-placeholder">[单位，如 country / group]</span>, while <span class="template-placeholder">[最小类别]</span> received the smallest share. Notably, <span class="template-placeholder">[特殊对象，如 某国 / 某组]</span> led in <span class="template-placeholder">[X out of Y]</span> of the categories.
+            </div>
+            <p class="template-note">要点：① 两个维度覆盖——"全局最大/最小类别" + "某对象在多数类别中领先"；② 不出现具体数字；③ 使用 accounted for / received the smallest share 标准占比搭配；④ "led in X of the Y categories" 精确表达部分领先，避免 "in all categories" 这类易出错的泛化</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            主体段数据描述模板
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              <p style="margin-bottom:12px;"><strong>主体段一（第一组 / 主要类别 + 次要类别对比）：</strong></p>
+              Regarding <span class="template-placeholder">[类别A]</span>, <span class="template-placeholder">[极值对象]</span> recorded the highest percentage at <span class="template-placeholder">[数据]</span>, followed by <span class="template-placeholder">[第二名]</span> at <span class="template-placeholder">[数据]</span>. By contrast, <span class="template-placeholder">[最低对象]</span> had the lowest figure at just <span class="template-placeholder">[数据]</span>, while <span class="template-placeholder">[中间对象1]</span> and <span class="template-placeholder">[中间对象2]</span> fell in between at <span class="template-placeholder">[数据]</span> and <span class="template-placeholder">[数据]</span> respectively. For <span class="template-placeholder">[类别B]</span>, most <span class="template-placeholder">[单位]</span> stood at a broadly close level of around <span class="template-placeholder">[数据]</span>, whereas <span class="template-placeholder">[异常对象]</span> ranked first at <span class="template-placeholder">[数据]</span>.
+
+              <p style="margin-bottom:12px; margin-top:16px;"><strong>主体段二（第二组 / 剩余类别）：</strong></p>
+              As for <span class="template-placeholder">[类别C]</span>, this was the least popular category in all <span class="template-placeholder">[数量]</span> <span class="template-placeholder">[单位]</span>. <span class="template-placeholder">[领先对象]</span> still led with <span class="template-placeholder">[数据]</span>, whereas <span class="template-placeholder">[最低对象]</span> had the smallest proportion at just <span class="template-placeholder">[数据]</span>. The remaining <span class="template-placeholder">[数量]</span> <span class="template-placeholder">[单位]</span> — <span class="template-placeholder">[列举]</span> — spent a similar amount of roughly <span class="template-placeholder">[数据]</span>.
+            </div>
+            <p class="template-note">要点：① 固定衔接词序列：Regarding → By contrast → while → For → whereas → As for → whereas → The remaining；② 数据引用固定搭配 recorded the highest percentage at / had the lowest figure at just / stood at / fell in between at / ranked first at；③ 中间数值用 respectively 明确对应；④ 用破折号嵌入同位语列举剩余对象；⑤ 当多个数据接近时，用 "stood at a broadly close level of around" 避免重复报数</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e2e8f0;">
+          <div style="font-size:.85rem; color:#718096; font-weight:600; margin-bottom:6px;">来源文章</div>
+          <a href="essays/2026-4-18_items_spending.html#revised" style="font-size:.85rem;" data-essay="2026-4-18_items_spending">2026-04-18 Consumer Spending on Different Items</a>
+        </div>
+      </div>
+    </div>
+
     <div id="dynamic-process" class="template-block" data-chartclass="dynamic" data-charttype="process" style="margin-top:24px;">
       <div class="card">
         <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">动态类 × 流程图（生命周期/循环流程）写作模板</h3>
