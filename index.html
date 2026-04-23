@@ -32,19 +32,19 @@
     <!-- 统计概览 -->
     <div class="stats-grid">
       <div class="stat-item">
-        <div class="stat-number" data-stat="essay-count">3</div>
+        <div class="stat-number" data-stat="essay-count">4</div>
         <div class="stat-label">已修改作文</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-before">4.83</div>
+        <div class="stat-number" data-stat="avg-before">5.13</div>
         <div class="stat-label">平均原文分</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-after">7.0</div>
+        <div class="stat-number" data-stat="avg-after">7.13</div>
         <div class="stat-label">平均修改后分</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-diff">+2.17</div>
+        <div class="stat-number" data-stat="avg-diff">+2.00</div>
         <div class="stat-label">平均提升</div>
       </div>
     </div>
@@ -52,6 +52,29 @@
     <!-- 作文列表 -->
     <h2 style="font-size:1.2rem; color:#1a365d; margin:32px 0 16px;">作文列表</h2>
     <div class="card-grid">
+      <div class="card" data-essay="2026-4-23_recycling_glass_bottles" data-score-before="6.0" data-score-after="7.5">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+          <a href="essays/2026-4-23_recycling_glass_bottles.html" style="flex:1; color:inherit;">
+            <div style="font-size:.85rem; color:#718096; margin-bottom:6px;">2026-04-23</div>
+            <div style="font-weight:600; color:#2d3748; margin-bottom:8px;">Recycling Glass Bottles</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <span class="tag tag-blue">动态类</span>
+              <span class="tag tag-purple">流程图（工业循环）</span>
+            </div>
+          </a>
+          <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+            <div>
+              <div style="font-size:.8rem; color:#718096;">Overall</div>
+              <div style="font-size:1.1rem;">
+                <span style="color:#e53e3e; font-weight:700;">6.0</span>
+                <span style="color:#a0aec0; margin:0 4px;">→</span>
+                <span style="color:#38a169; font-weight:700;">7.5</span>
+              </div>
+            </div>
+            <button class="delete-btn" onclick="event.stopPropagation(); deleteEssay('2026-4-23_recycling_glass_bottles')">移入回收站</button>
+          </div>
+        </div>
+      </div>
       <div class="card" data-essay="2026-4-18_items_spending" data-score-before="5.0" data-score-after="7.0">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
           <a href="essays/2026-4-18_items_spending.html" style="flex:1; color:inherit;">
