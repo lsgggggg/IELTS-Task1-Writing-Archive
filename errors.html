@@ -32,9 +32,9 @@
     <div class="card" style="margin-bottom:24px;">
       <h3 style="font-size:1rem; color:#1a365d; margin-bottom:12px;">错误概览</h3>
       <div class="stats-grid">
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">22</div><div class="stat-label">错误类型</div></div>
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">51</div><div class="stat-label">错误总数</div></div>
-        <div class="stat-item"><div class="stat-number" data-stat="error-essays">5</div><div class="stat-label">涉及作文</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">29</div><div class="stat-label">错误类型</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">74</div><div class="stat-label">错误总数</div></div>
+        <div class="stat-item"><div class="stat-number" data-stat="error-essays">6</div><div class="stat-label">涉及作文</div></div>
       </div>
     </div>
 
@@ -639,6 +639,212 @@
           <div><span class="error-wrong">closed shops started with a total of 63000 and in 2012, it overtooked closed shops</span></div>
           <div style="margin-top:4px;"><span class="error-correct">前文主语是 closed shops，用 "it overtooked closed shops" 变成了"关闭商店超过了关闭商店"——指代混乱</span></div>
           <div class="error-source">来源：<a href="essays/2026-4-13_shops.html">2026-04-13 Shop Closures & Openings</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>数据计算错误（TA 高压线 🔴）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 2 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>Task 1 的 TA 评分明确要求 "accurately reports / accurately presents data"——数据计算错误会**直接限制 TA 不超过 6 分**。建议建立"读数据 → 心算合计 → 与文中数字交叉验证"的固定流程：饼图各扇区合计应为 100%；表格分组合计也应为 100%，每写出一个汇总数字就对照原始数据复核。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">nearly 70% of library members were adults</span>（饼图中 Adults 18-64 = 51%，Adults 65+ = 12%，合计 = 63%）</div>
+          <div style="margin-top:4px;"><span class="error-correct">around 63% of library members were adults</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">books and audio books the adults borrowed accounting for 55%</span>（表格中 Adult fiction 38% + Adult non-fiction 13% + Adult audio books 2% = 53%）</div>
+          <div style="margin-top:4px;"><span class="error-correct">adult-related items made up roughly 53% of all loans</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>中式英语搭配（in all walks of people / holds X% percentage / occupy / count）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 5 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>中式英语是 LR 维度严重失分项。常见雷区：① in all walks of life 是固定短语（"各行各业"），不能改造为 "in all walks of people"；② percentage 与 % 已是同义重复，holds X% percentage 错上加错；③ occupy 意为"占据空间"，不能描述比例；④ count 通常指人头数，不能形容比例。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">who shared 51% in all walks of people</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">forming the largest group at 51%（用 form / forming + at + 数据）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">children's who holds 45% percentage</span>（children's 是所有格不能被 who 修饰；45% 已是 percentage）</div>
+          <div style="margin-top:4px;"><span class="error-correct">45% for children's items</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">books and audio books the adults borrowed also occupy the largest proportion</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">adult-related items made up roughly 53% of all loans（用 made up / accounted for 描述比例）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">DVDs and adult audio books has the smallest count in 1% and 2%</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">were the least borrowed, at just 1% and 2% respectively（用 the least borrowed 描述比例最低）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>年龄介词错误（in → aged）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 3 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>描述年龄区间的标准固化搭配是 "[名词] aged [起始年龄] to [结束年龄]" 或 "[名词] aged [年龄] and over / and under"——介词必须是 aged，不是 in / in age。这是雅思社会类 Task 1（人口、消费、教育图表）的高频固定搭配。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">adults in 18 to 64</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">adults aged 18 to 64</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">young adults in age 13 to 17</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">young adults aged 13 to 17</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">Adults in 65 and over</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">adults aged 65 and over（adults 不大写）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>比例介词错误（in X% → at X%）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 3 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>引用比例数据时介词必须是 at，不能是 in。固化模板：accounting for at X% / forming the largest group at X% / the least borrowed at just X%——全部用 at。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">fiction account for the biggest proportions comes from both children and adult in 38%</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">with children's fiction and adult fiction each accounting for 38%（at + 数据，但本句改为 each accounting for 后省略 at）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">DVDs and adult audio books has the smallest count in 1% and 2%</span></div>
+          <div style="margin-top:4px;"><span class="error-correct">were the least borrowed, at just 1% and 2% respectively</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">during 2009 to 2014</span>（年份范围介词错误——during 后只接单一时段）</div>
+          <div style="margin-top:4px;"><span class="error-correct">between 2009 and 2014（年份范围用 between...and...）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>主谓一致 / 时态错乱（柱状图段集中爆发）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 5 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>① 描述图表已发生数据（2007-2016 / 2016 年都是过去时间），全篇必须用过去时；② 主语后不能直接接 -ing 形式（必须有助动词）；③ 不可数名词（fiction）配单数动词，复数主语（DVDs / audio books）配复数动词。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">the total number of loans starts with the smallest figures</span>（应过去时）</div>
+          <div style="margin-top:4px;"><span class="error-correct">the total number of loans started at its lowest point</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">and then it increasing and reached</span>（it 后直接接 -ing 严重语法错误，且与 reached 时态冲突）</div>
+          <div style="margin-top:4px;"><span class="error-correct">before climbing to approximately 22,000（用介词 + 动名词紧凑串联）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">fiction account for the biggest proportions</span>（fiction 不可数应用 accounts，且应过去时 accounted）</div>
+          <div style="margin-top:4px;"><span class="error-correct">fiction was clearly the most popular（整句重组，避开主谓陷阱）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">children's DVDs and adult audio books has the smallest count</span>（复数主语应配 were，且应过去时）</div>
+          <div style="margin-top:4px;"><span class="error-correct">children's DVDs and adult audio books were the least borrowed</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">adults account for the majority...</span>（描述 2016 既成事实应过去时）</div>
+          <div style="margin-top:4px;"><span class="error-correct">adults accounted for the majority of both library members and books borrowed in 2016</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>严重错乱句法（with a slightly fluctuate / children's who holds）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 2 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>① 副词 slightly 修饰动词（如 fluctuated slightly），不能修饰 a + 名词；② 所有格（children's）不能被 who 引导的定语从句修饰，因为 who 只能修饰人名词。这两类错误是英语句法的基础线，必须避免。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">with a slightly fluctuate during 2009 to 2014</span>（with a + 副词 + 动词原形 完全错乱）</div>
+          <div style="margin-top:4px;"><span class="error-correct">it fluctuated slightly between 2009 and 2014（slightly 副词修饰动词 fluctuated）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">compared to children's who holds 45% percentage</span>（children's 是所有格，不能被 who 引导从句修饰）</div>
+          <div style="margin-top:4px;"><span class="error-correct">compared with 45% for children's items（用 for + 名词替代错乱定语从句）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" data-essay="2026-4-25_book_loan">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <div>
+          <strong>拼写 + 标点（lookng / he / 漏句号）</strong>
+          <span class="error-count" style="margin-left:8px;">出现 4 次</span>
+        </div>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px; color:#4a5568;"><strong>规则说明：</strong>低级失误（拼写、漏句号、大小写）虽不致命，但会**集中拉低 GRA 维度的"准确性"分数**。建议成文后用 30 秒做"句号 + 拼写 + 大小写"三遍快扫——这是性价比最高的提分动作。</p>
+        <div class="error-example">
+          <div><span class="error-wrong">lookng at he pie chart</span>（looking 漏 i；he 应为 the）</div>
+          <div style="margin-top:4px;"><span class="error-correct">Looking at the pie chart</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">total loans by category in 2016</span>（开头段末漏句号）</div>
+          <div style="margin-top:4px;"><span class="error-correct">...recorded between 2007 and 2016. （添加句号）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">smallest count in 1% and 2%</span>（Body 2 末漏句号）</div>
+          <div style="margin-top:4px;"><span class="error-correct">...at just 1% and 2% respectively. （添加句号）</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">Adults in 65 and over</span>（adults 误大写）</div>
+          <div style="margin-top:4px;"><span class="error-correct">adults aged 65 and over</span></div>
+          <div class="error-source">来源：<a href="essays/2026-4-25_book_loan.html">2026-04-25 Little Chalfont Library</a></div>
         </div>
       </div>
     </div>

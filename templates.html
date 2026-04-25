@@ -34,6 +34,7 @@
       <button class="filter-btn active" onclick="filterItems('chartclass','all')">全部</button>
       <button class="filter-btn" onclick="filterItems('chartclass','static')">静态类</button>
       <button class="filter-btn" onclick="filterItems('chartclass','dynamic')">动态类</button>
+      <button class="filter-btn" onclick="filterItems('chartclass','mixed')">组合类</button>
     </div>
 
     <!-- 第二级筛选：图表类型 -->
@@ -45,6 +46,7 @@
       <button class="filter-btn" onclick="filterItems('charttype','table')">表格</button>
       <button class="filter-btn" onclick="filterItems('charttype','map')">地图</button>
       <button class="filter-btn" onclick="filterItems('charttype','process')">流程图</button>
+      <button class="filter-btn" onclick="filterItems('charttype','mixed')">组合图</button>
     </div>
 
 
@@ -323,6 +325,61 @@
         <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e2e8f0;">
           <div style="font-size:.85rem; color:#718096; font-weight:600; margin-bottom:6px;">来源文章</div>
           <a href="essays/2026-4-24_four_countries_population.html#revised" style="font-size:.85rem;" data-essay="2026-4-24_four_countries_population">2026-04-24 Urbanisation in Four Asian Countries</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mixed-combo" class="template-block" data-chartclass="mixed" data-charttype="mixed" style="margin-top:24px;">
+      <div class="card">
+        <h3 style="font-size:1.05rem; color:#1a365d; margin-bottom:4px;">组合类 × 三图组合（饼图 + 表格 + 柱状图）写作模板</h3>
+        <p class="template-note">基于 1 篇文章总结，专门用于"静态比例（饼图 + 表格）+ 动态趋势（柱状图）"型组合图，重点处理多图段落分配和饼图/表格内部呼应</p>
+
+        <div class="accordion-item open" style="margin-top:16px;">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            开头段模板（题目改述）
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              The pie chart, table and bar chart provide information about <span class="template-placeholder">[主题对象，如 Little Chalfont Library]</span> in <span class="template-placeholder">[主时间点，如 2016]</span>, illustrating <span class="template-placeholder">[饼图描述，如 the age distribution of its members]</span>, <span class="template-placeholder">[表格描述，如 the proportion of total loans by category]</span>, and <span class="template-placeholder">[柱状图描述，如 the total number of loans recorded between 2007 and 2016]</span>.
+            </div>
+            <p class="template-note">要点：① 必须**精确点出三种图表名称**（pie chart, table and bar chart），切勿用笼统的 "The diagrams"——这是组合图与单图改述的核心区别；② 用 illustrating 引导出三个并列同位语短语，每个短语对应一种图表，结构对称；③ 时间锚点必须完整——主时间点（如 2016）和动态范围（如 2007-2016）都要点到；④ 切勿使用 various data / different information 等含混表达</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            概述段模板（Overview）⚠️ 双层概括
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              Overall, it is clear that, despite some <span class="template-placeholder">[波动描述]</span>, <span class="template-placeholder">[动态层最显著趋势，如 the total number of books lent rose considerably]</span> over the <span class="template-placeholder">[时长]</span>-year period. In addition, <span class="template-placeholder">[静态层最显著特征，如 adults accounted for the majority of both library members and books borrowed]</span> in <span class="template-placeholder">[时间点]</span>.
+            </div>
+            <p class="template-note">要点：① **双层概括原则**——组合图涉及多种数据（动态 + 静态、比例 + 趋势），Overview 必须**同时抓出每种数据的最显著特征**；② 第一句覆盖动态层（柱状图趋势），用 "rose / fell considerably over the X-year period"；③ 第二句覆盖静态层（饼图 + 表格），用 In addition 衔接；④ 静态层概括如能跨越饼图和表格两种图表（如"成人在两个维度都占主导"），是 7+ 分水准的高级概括；⑤ 不出现具体数字</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            主体段数据描述模板（双段策略）
+            <span class="arrow">▶</span>
+          </div>
+          <div class="accordion-body">
+            <div class="template-text">
+              <p style="margin-bottom:12px;"><strong>主体段一（动态柱状图：起止 + 中间过程）：</strong></p>
+              In <span class="template-placeholder">[起始年]</span>, <span class="template-placeholder">[主语，如 the total number of loans]</span> started at its lowest point, standing at roughly <span class="template-placeholder">[起始数据]</span>, before climbing to approximately <span class="template-placeholder">[结束数据]</span> by <span class="template-placeholder">[结束年]</span>. The figure rose steadily until <span class="template-placeholder">[早期拐点]</span>, after which it fluctuated slightly between <span class="template-placeholder">[波动范围]</span>, before rising again to reach its peak in the final year.
+
+              <p style="margin-bottom:12px; margin-top:16px;"><strong>主体段二（静态饼图 + 表格：先饼图 → 桥接 → 表格 → 内部规律）：</strong></p>
+              Looking at the pie chart and table for <span class="template-placeholder">[时间点]</span>, around <span class="template-placeholder">[合计数据]</span>% of <span class="template-placeholder">[对象]</span> were <span class="template-placeholder">[主导类别]</span>, with those aged <span class="template-placeholder">[起始年龄]</span> to <span class="template-placeholder">[结束年龄]</span> forming the largest group at <span class="template-placeholder">[数据]</span>%, while <span class="template-placeholder">[次要子类]</span> accounted for a further <span class="template-placeholder">[数据]</span>%. The remaining members were <span class="template-placeholder">[剩余对象]</span> (<span class="template-placeholder">[数据]</span>%) and <span class="template-placeholder">[剩余对象]</span> aged <span class="template-placeholder">[年龄范围]</span> (<span class="template-placeholder">[数据]</span>%). A similar pattern was observed in <span class="template-placeholder">[表格主题]</span>: <span class="template-placeholder">[主导类别]-related items</span> made up roughly <span class="template-placeholder">[数据]</span>% of all <span class="template-placeholder">[对象]</span>, compared with <span class="template-placeholder">[数据]</span>% for <span class="template-placeholder">[次要类别]</span> and only <span class="template-placeholder">[数据]</span>% for <span class="template-placeholder">[第三类别]</span>. Within both categories, <span class="template-placeholder">[共同最大子类]</span> was clearly the most popular, with <span class="template-placeholder">[子类a]</span> and <span class="template-placeholder">[子类b]</span> each accounting for <span class="template-placeholder">[数据]</span>%, whereas <span class="template-placeholder">[最小子类a]</span> and <span class="template-placeholder">[最小子类b]</span> were the least borrowed, at just <span class="template-placeholder">[数据]</span>% and <span class="template-placeholder">[数据]</span>% respectively.
+            </div>
+            <p class="template-note">要点：① **双段分配策略**——动态数据（柱状图）独立成段，静态数据（饼图 + 表格）合并成段；② **柱状图四点必含**：起点（lowest point at...）、上升（climbing to）、波动（fluctuated slightly between）、终点（peak in the final year）；③ **饼图/表格桥接句**——用 "A similar pattern was observed in..." 是组合图专属高分句式，建立两类静态数据的内在呼应；④ **表格内部规律**——用 "Within both categories, X was the most popular" + "whereas Y were the least borrowed" 抓出表格行/列的核心规律；⑤ **年龄固化搭配**——[名词] aged [起始] to [结束]；[名词] aged [年龄] and over；⑥ **比例介词固化**——at X%（不能写 in X%）；⑦ **respectively** 用于明确多个数据的对应顺序</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e2e8f0;">
+          <div style="font-size:.85rem; color:#718096; font-weight:600; margin-bottom:6px;">来源文章</div>
+          <a href="essays/2026-4-25_book_loan.html#revised" style="font-size:.85rem;" data-essay="2026-4-25_book_loan">2026-04-25 Little Chalfont Library</a>
         </div>
       </div>
     </div>
